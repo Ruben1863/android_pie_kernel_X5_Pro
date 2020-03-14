@@ -172,7 +172,7 @@
 	alsps_intpin_default: alspsdefaultcfg {
 
 	};
-
+};
 /* sensor end */
 
 &accdet {
