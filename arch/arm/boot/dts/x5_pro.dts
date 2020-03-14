@@ -116,11 +116,13 @@
 		vib_limit = <9>;
 		vib_vol= <5>;
 	};
+	
+	flashlight:flashlight {
+		compatible = "mediatek,mt6735-flashlight";
+	};
 };
 
-flashlights_gpio: flashlights_dummy_gpio {
- 	compatible = "mediatek,flashlights_dummy_gpio";
-};
+
 
 &i2c2 {
 /* start sensor */
