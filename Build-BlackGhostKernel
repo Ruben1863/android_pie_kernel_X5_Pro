@@ -100,7 +100,7 @@ function BUILD() {
         echo "${YLW} #       REAL BUILDING STARTED       #"
         echo "${YLW} #                                   #"
         echo "${YLW} #####################################"
-        make -j$(nproc --all) O=BGH-Out/ TARGET_ARCH=arm | tee -a kernel.log
+        make -j4 O=BGH-Out/ TARGET_ARCH=arm | tee -a kernel.log
         OIMAGE=BGH-Out/arch/arm/boot/zImage-dtb
 }
 
