@@ -1,0 +1,58 @@
+make[1]: Entering directory '/home/ruben1863/kernel-3.18/BGH-Out'
+  HOSTCC  scripts/basic/fixdep
+  GEN     ./Makefile
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/ruben1863/kernel-3.18/BGH-Out'
+make[1]: Entering directory '/home/ruben1863/kernel-3.18/BGH-Out'
+  GEN     ./Makefile
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/ruben1863/kernel-3.18/BGH-Out'
+make[1]: Entering directory '/home/ruben1863/kernel-3.18/BGH-Out'
+  HOSTCC  scripts/basic/fixdep
+  GEN     ./Makefile
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/ruben1863/kernel-3.18/BGH-Out'
+make[1]: Entering directory '/home/ruben1863/kernel-3.18/BGH-Out'
+  HOSTCC  scripts/basic/fixdep
+  GEN     ./Makefile
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/ruben1863/kernel-3.18/BGH-Out'
+make[1]: Entering directory '/home/ruben1863/kernel-3.18/BGH-Out'
+  HOSTCC  scripts/basic/fixdep
+  GEN     ./Makefile
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/ruben1863/kernel-3.18/BGH-Out'
