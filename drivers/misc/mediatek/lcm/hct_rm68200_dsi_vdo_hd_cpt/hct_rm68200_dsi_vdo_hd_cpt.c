@@ -377,7 +377,7 @@ static void lcm_set_util_funcs(const LCM_UTIL_FUNCS *util)
 
 
 
-static void lcm_get_params(struct LCM_PARAMS *params)
+static void lcm_get_params(LCM_PARAMS *params)
 {
 	memset(params, 0, sizeof(LCM_PARAMS));
 	
