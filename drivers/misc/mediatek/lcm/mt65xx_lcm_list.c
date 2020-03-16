@@ -34,6 +34,13 @@ LCM_DSI_MODE_CON lcm_dsi_mode;
 #endif
 
 LCM_DRIVER *lcm_driver_list[] = {
+
+//DOOGEE X5 PRO by Ruben1863
+#if defined(HCT_RM68200_DSI_VDO_HD_CPT)
+	&hct_rm68200_dsi_vdo_hd_cpt_lcm_drv,
+#endif
+//END DOOGEE X5 PRO
+
 #if defined(ILI9881C_HD_DSI_VDO_ILITEK_NT50358_3LANE)
 	&ili9881c_hd_dsi_vdo_ilitek_nt50358_3lane_lcm_drv,
 #endif
