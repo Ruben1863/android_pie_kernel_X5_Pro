@@ -25,7 +25,7 @@
 //  Local Variables
 // ---------------------------------------------------------------------------
 
-static struct LCM_UTIL_FUNCS lcm_util = {0};
+static LCM_UTIL_FUNCS lcm_util = {0};
 
 #define SET_RESET_PIN(v) (lcm_util.set_reset_pin((v)))
 #define UDELAY(n) (lcm_util.udelay(n))
@@ -334,11 +334,11 @@ static struct LCM_setting_table lcm_initialization_setting[] = {
 static struct LCM_setting_table lcm_deep_sleep_mode_in_setting[] = 
 {
 	{REGFLAG_DELAY, 20, {}},
-    {0x28, 1, {0x00}},
-    {REGFLAG_DELAY, 20, {}},
-    {0x10, 1, {0x00}},
-    {REGFLAG_DELAY, 20, {}},
-    {REGFLAG_END_OF_TABLE, 0x00, {}}
+	{0x28, 1, {0x00}},
+	{REGFLAG_DELAY, 20, {}},
+	{0x10, 1, {0x00}},
+	{REGFLAG_DELAY, 20, {}},
+	{REGFLAG_END_OF_TABLE, 0x00, {}}
 };
 
 static void push_table(struct LCM_setting_table *table, unsigned int count, unsigned char force_update)
@@ -370,15 +370,16 @@ static void push_table(struct LCM_setting_table *table, unsigned int count, unsi
 //  LCM Driver Implementations
 // ---------------------------------------------------------------------------
 
-static void lcm_set_util_funcs(const struct LCM_UTIL_FUNCS *util)
+static void lcm_set_util_funcs(const LCM_UTIL_FUNCS *util)
 {
-    memcpy(&lcm_util, util, sizeof(struct LCM_UTIL_FUNCS));
+	memcpy(&lcm_util, util, sizeof(LCM_UTIL_FUNCS));
 }
+
 
 
 static void lcm_get_params(struct LCM_PARAMS *params)
 {
-	memset(params, 0, sizeof(struct LCM_PARAMS));
+	memset(params, 0, sizeof(LCM_PARAMS));
 	
 	params->type = 2;
 	params->physical_width = 63;
