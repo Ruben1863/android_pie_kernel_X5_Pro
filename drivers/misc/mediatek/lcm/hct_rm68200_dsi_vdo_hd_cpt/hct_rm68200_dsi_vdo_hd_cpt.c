@@ -503,7 +503,7 @@ static unsigned int lcm_compare_id(void)
 
 	return (LCM_ID == id) ? 1 : 0;
 */
-	return 1
+	return 1;
 }
 
 // ---------------------------------------------------------------------------
