@@ -36,13 +36,12 @@ static LCM_UTIL_FUNCS lcm_util = { 0 };
 //  Local Functions
 // ---------------------------------------------------------------------------
 
-#define dsi_set_cmdq_V3(para_tbl,size,force_update)         lcm_util.dsi_set_cmdq_V3(para_tbl,size,force_update)
-#define dsi_set_cmdq_V2(cmd, count, ppara, force_update)	lcm_util.dsi_set_cmdq_V2(cmd, count, ppara, force_update)
-#define dsi_set_cmdq(pdata, queue_size, force_update)		lcm_util.dsi_set_cmdq(pdata, queue_size, force_update)
-#define read_reg_v2(cmd, buffer, buffer_size)	            lcm_util.dsi_dcs_read_lcm_reg_v2(cmd, buffer, buffer_size)
-#define write_regs(addr, pdata, byte_nums)	                lcm_util.dsi_write_regs(addr, pdata, byte_nums)
-#define read_reg(cmd)   lcm_util.dsi_dcs_read_lcm_reg(cmd)
-#define wrtie_cmd(cmd)	lcm_util.dsi_write_cmd(cmd)
+#define dsi_set_cmdq_V2(cmd, count, ppara, force_update)     lcm_util.dsi_set_cmdq_V2(cmd, count, ppara, force_update)
+#define dsi_set_cmdq(pdata, queue_size, force_update)        lcm_util.dsi_set_cmdq(pdata, queue_size, force_update)
+#define wrtie_cmd(cmd)                                       lcm_util.dsi_write_cmd(cmd)
+#define write_regs(addr, pdata, byte_nums)                   lcm_util.dsi_write_regs(addr, pdata, byte_nums)
+#define read_reg(cmd)                                        lcm_util.dsi_dcs_read_lcm_reg(cmd)
+#define read_reg_v2(cmd, buffer, buffer_size)                lcm_util.dsi_dcs_read_lcm_reg_v2(cmd, buffer, buffer_size)
 
 struct LCM_setting_table {
     unsigned cmd;
@@ -51,7 +50,6 @@ struct LCM_setting_table {
 };
 
 static struct LCM_setting_table lcm_initialization_setting[] =
-    
 {
 	{0XFE, 1, {0X00,0X01,0X01}},
 	{0X24, 1, {0XC0}},
@@ -418,20 +416,21 @@ static void lcm_init(void)
 	SET_RESET_PIN(1);
 	MDELAY(120);
 
-    push_table(lcm_initialization_setting, sizeof(lcm_initialization_setting) / sizeof(struct LCM_setting_table), 1);
+	push_table(lcm_initialization_setting, sizeof(lcm_initialization_setting) / sizeof(struct LCM_setting_table), 1);
 }
 
 
 static void lcm_suspend(void)
 {
 	push_table(lcm_deep_sleep_mode_in_setting, sizeof(lcm_deep_sleep_mode_in_setting) / sizeof(struct LCM_setting_table), 1);
+
 	SET_RESET_PIN(0);
 	MDELAY(50);
 }
 
 static void lcm_resume(void)
 {
-    lcm_init();
+	lcm_init();
 }
 
 static unsigned int lcm_esd_check(void)
@@ -440,29 +439,23 @@ static unsigned int lcm_esd_check(void)
 
 	read_reg_v2(0x0A, buffer, 1);
 
-#ifndef BUILD_LK
-    if(buffer[0] == 156)
-    {
-		#ifndef BUILD_LK
-			printk("RM68190 lcm_esd_check false \n");
-        #endif
-        return false;
-    }
+	if(buffer[0] == 156)
+	{
+		printk("RM68200 lcm_esd_check false \n");
+        	return false;
+	}
 	else
-    {      
-        #ifndef BUILD_LK
-			printk("RM68190 lcm_esd_check true \n");
-        #endif
-        return true;
-    }
-#endif
+	{      
+		printk("RM68200 lcm_esd_check true \n");
+        	return true;
+	}
 }
 
 static unsigned int lcm_esd_recover(void)
 {
 	unsigned int data_array[16];
 	
-	printk("RM68190 lcm_esd_recover enter\n");
+	printk("RM68200 lcm_esd_recover enter\n");
 	
 	SET_RESET_PIN(1);
 	MDELAY(10);
