@@ -467,7 +467,7 @@ static unsigned int lcm_esd_recover(void)
 	lcm_init();
 	
 	data_array[0] = 0x00320500;
-	dsi_set_cmdq(&data_array, 1, 1);
+	dsi_set_cmdq(data_array, 1, 1);
 	MDELAY(50);
 
 	return 1;
