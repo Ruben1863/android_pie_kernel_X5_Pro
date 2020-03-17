@@ -25,7 +25,7 @@
 //  Local Variables
 // ---------------------------------------------------------------------------
 
-static LCM_UTIL_FUNCS lcm_util = {0};
+static LCM_UTIL_FUNCS lcm_util = { 0 };
 
 #define SET_RESET_PIN(v) (lcm_util.set_reset_pin((v)))
 #define UDELAY(n) (lcm_util.udelay(n))
@@ -50,7 +50,7 @@ struct LCM_setting_table {
     unsigned char para_list[64];
 };
 
-static struct LCM_setting_table lcm_initialization_setting[] = {
+static struct LCM_setting_table lcm_initialization_setting[] =
     
 {
 	{0XFE, 1, {0X00,0X01,0X01}},
