@@ -34,5 +34,3 @@ else
 obj-y += ../dummy_flashlight/
 endif
 
-
-
