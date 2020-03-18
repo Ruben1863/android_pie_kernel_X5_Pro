@@ -4,6 +4,12 @@ config MTK_FLASHLIGHT
   help
     CONFIG_MTK_FLASHLIGHT
 
+config CUSTOM_KERNEL_FLASHLIGHT
+        string "CUSTOM_KERNEL_FLASHLIGHT"
+        help
+          Kernel space cameara flashlight driver. You can use this driver
+          choose cameara flashlight type.
+
 config MTK_FLASHLIGHT_USE_MODULE
 	bool "Mediatek flashlight driver build as module"
 	default n
