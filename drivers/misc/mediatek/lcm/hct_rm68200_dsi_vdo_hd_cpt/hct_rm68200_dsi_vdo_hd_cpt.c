@@ -51,7 +51,7 @@ struct LCM_setting_table {
 
 static struct LCM_setting_table lcm_initialization_setting[] =
 {
-	{0XFE, 1, {0X00,0X01,0X01}},
+	{0XFE, 1, {0X01}},
 	{0X24, 1, {0XC0}},
 	{0X25, 1, {0X53}},
 	{0X26, 1, {0X00}},
@@ -325,17 +325,18 @@ static struct LCM_setting_table lcm_initialization_setting[] =
 	{0X11, 0, {0X00}},
 	{REGFLAG_DELAY, 120, {}},
 	{0X29, 0, {0X00}},
-	{REGFLAG_DELAY, 20, {}},
+	{REGFLAG_DELAY, 50, {}},
 	{REGFLAG_END_OF_TABLE, 0X00, {}}	
 };	
 
 static struct LCM_setting_table lcm_deep_sleep_mode_in_setting[] = 
 {
-	{REGFLAG_DELAY, 20, {}},
+	{0x01, 1, {0x00}},
+	{REGFLAG_DELAY, 50, {}},
 	{0x28, 1, {0x00}},
-	{REGFLAG_DELAY, 20, {}},
+	{REGFLAG_DELAY, 50, {}},
 	{0x10, 1, {0x00}},
-	{REGFLAG_DELAY, 20, {}},
+	{REGFLAG_DELAY, 50, {}},
 	{REGFLAG_END_OF_TABLE, 0x00, {}}
 };
 
