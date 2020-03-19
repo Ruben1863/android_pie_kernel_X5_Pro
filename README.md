@@ -9,7 +9,7 @@ This custom kernel (3.18.119) source made to DOOGEE X5 Pro (MT6735).
 | LCM driver | `hct_rm68200_dsi_vdo_hd_cpt` | Yes | Yes |
 | Touch panel | `FT5X05 (i2c 1-0038)` | Yes | - |
 | GPU | `Mali-T720 MP2` | Yes | Yes |
-| Camera #1 | `s5k5e2y_mipi_raw` | Yes | - |
+| Camera #1 | `s5k5e2ya_mipi_raw` | Yes | - |
 | Camera #2 | `gc2355_mipi_raw` | Yes | - |
 | Accelerometer | ` (i2c 2-0015)` | Yes | - |
 | ALS/PS | `EPL2182 (i2c 2-0049)` | Yes | - |
@@ -17,11 +17,11 @@ This custom kernel (3.18.119) source made to DOOGEE X5 Pro (MT6735).
 | Lens | `FM50AF` | Yes | - |
 | RAM | `2 GB LPDDR3_1600` | - | Yes |
 | Sound | `mtsndcard` | Yes | - |
-| Accdet | `mt6580-accdet` | - | Yes |
+| Accdet | `mt6735-accdet` | - | - |
 | Other | `kd_camera_hw (i2c 0-0010)` | Yes | - |
 
 ## Build process:
-* Clone that repo, by running:
+* Clone this repo, by running:
 `git clone https://github.com/ruben1863/android_pie_kernel_X5_Pro kernel`
 * Start the build:
 `cd kernel ; bash Build`
