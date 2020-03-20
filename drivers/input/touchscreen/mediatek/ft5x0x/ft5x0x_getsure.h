@@ -1,5 +1,4 @@
 #include "accdet.h"
-#include "linux/input/setkpd.h"
 #ifdef CONFIG_HCT_TP_GESTRUE
 #include "ft_gesture_lib.h"
 #endif
@@ -49,9 +48,8 @@ struct gesture_item{
 unsigned short coordinate_x[150] = {0};
 unsigned short coordinate_y[150] = {0};
 
-static struct input_dev * kpd_pwrdev;
 static char gesture_value[10] = {};
-static char enable = 0;
+static char enable = 1;
 static char version = 2.0;
 static int g_call_state = 0;
 
@@ -72,10 +70,6 @@ static struct gesture_item gesture_array[] =
 	{GESTURE_Z,	KEY_GESTURE_Z,		"z"},
 	{0}
 };
-
-void setkpddev(struct input_dev * input_device) {
-	kpd_pwrdev = input_device;
-}
 
 static ssize_t show_gesture_value(struct device *dev, struct device_attribute *attr, char *buf)
 {
@@ -142,16 +136,12 @@ static void fts_check_gesture(struct input_dev *input_dev,int gesture_id)
 	printk("Smartwake: gesture: id: 0x%x\n ", gesture_id);
 	*gesture_value = 0;
 
-
 	for(;items->gesture_id;++items)
 	{
 		if (items->gesture_id != gesture_id) continue;
 
-                if (!enable)
-                    break;
-
-	        sprintf(gesture_value, items->name);
-	        tpd_wakeup(kpd_pwrdev);
+		        sprintf(gesture_value, items->name);
+		        tpd_wakeup(input_dev);
                 input_report_key(input_dev, items->action_id, 1);
                 input_sync(input_dev);
                 input_report_key(input_dev, items->action_id, 0);
@@ -197,7 +187,6 @@ static int ft5x0x_read_Touchdata(struct input_dev *input_dev, struct i2c_client*
 #ifdef CONFIG_HCT_TP_GESTRUE
 	if (!enable)
 		return -1;
-
 	gestrue_id = fetch_object_sample(buf, pointnum);
 	fts_check_gesture(input_dev, gestrue_id);
 #endif
@@ -234,4 +223,3 @@ static bool tpd_getsure_resume(struct i2c_client* i2c_client)
 
 	return true;
 }
-
