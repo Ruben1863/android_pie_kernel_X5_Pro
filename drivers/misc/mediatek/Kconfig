@@ -438,7 +438,7 @@ config MTK_GROUP_ENABLE_VERITY
 
 config SYSTEM_AS_ROOT
 	bool "Support system-as-root, which merges ramdisk into system image"
-	default y
+	default n
 
 config MTK_OTA_DEVICE
 	bool "OTA device"
