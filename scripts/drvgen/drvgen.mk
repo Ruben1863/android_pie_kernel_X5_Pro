@@ -70,6 +70,10 @@ $(DRVGEN_FILE_LIST): $(DRVGEN_TOOL) $(DWS_FILE) $(DRVGEN_FIG) $(PROJ_DTS_FILES)
 		fi \
 	done
 
+dtbo_check: 
+	echo "Eh"
+
+ifeq ($(strip $(CONFIG_MTK_DTBO_FEATURE)), y)
 
 dtbo_check: $(MAIN_DTB_NAMES) $(PROJ_DTB_NAMES)
 	for i in $(PROJ_DTB_FILES); do \
@@ -92,5 +96,5 @@ $(objtree)/dtboimg.cfg: FORCE
 	else \
 		rm $@.tmp; \
 	fi
-
+endif
 endif#MTK_PLATFORM
