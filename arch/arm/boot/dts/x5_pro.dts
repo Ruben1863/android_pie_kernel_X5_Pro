@@ -696,5 +696,5 @@
 };
 /* USB GPIO Kernal Standardization end */
 
-#include "x5_pro/cust.dtsi"
+#include "cust.dtsi"
 /*End of this file, DO NOT ADD ANYTHING HERE*/

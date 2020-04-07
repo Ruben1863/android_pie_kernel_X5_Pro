@@ -1,0 +1,1105 @@
+make[1]: Entering directory '/home/ruben1863/disk/android_pie_kernel_X5_Pro/out'
+  GEN     ./Makefile
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  WRAP    arch/arm/include/generated/asm/bitsperlong.h
+  WRAP    arch/arm/include/generated/asm/cputime.h
+  WRAP    arch/arm/include/generated/asm/current.h
+  WRAP    arch/arm/include/generated/asm/emergency-restart.h
+  WRAP    arch/arm/include/generated/asm/errno.h
+  WRAP    arch/arm/include/generated/asm/exec.h
+  CHK     include/generated/uapi/linux/version.h
+  WRAP    arch/arm/include/generated/asm/hash.h
+  UPD     include/generated/uapi/linux/version.h
+  WRAP    arch/arm/include/generated/asm/ioctl.h
+  WRAP    arch/arm/include/generated/asm/ipcbuf.h
+  WRAP    arch/arm/include/generated/asm/irq_regs.h
+  WRAP    arch/arm/include/generated/asm/kdebug.h
+  WRAP    arch/arm/include/generated/asm/local.h
+  WRAP    arch/arm/include/generated/asm/local64.h
+  WRAP    arch/arm/include/generated/asm/mcs_spinlock.h
+  WRAP    arch/arm/include/generated/asm/msgbuf.h
+  WRAP    arch/arm/include/generated/asm/param.h
+  WRAP    arch/arm/include/generated/asm/parport.h
+  WRAP    arch/arm/include/generated/asm/poll.h
+  WRAP    arch/arm/include/generated/asm/preempt.h
+  WRAP    arch/arm/include/generated/asm/resource.h
+  WRAP    arch/arm/include/generated/asm/rwsem.h
+  WRAP    arch/arm/include/generated/asm/scatterlist.h
+  WRAP    arch/arm/include/generated/asm/sections.h
+  WRAP    arch/arm/include/generated/asm/segment.h
+  WRAP    arch/arm/include/generated/asm/sembuf.h
+  WRAP    arch/arm/include/generated/asm/serial.h
+  WRAP    arch/arm/include/generated/asm/shmbuf.h
+rm -f dtboimg.cfg.tmp
+  WRAP    arch/arm/include/generated/asm/siginfo.h
+  HOSTCC  scripts/basic/bin2c
+  WRAP    arch/arm/include/generated/asm/simd.h
+  WRAP    arch/arm/include/generated/asm/sizes.h
+  WRAP    arch/arm/include/generated/asm/socket.h
+  WRAP    arch/arm/include/generated/asm/sockios.h
+  WRAP    arch/arm/include/generated/asm/termbits.h
+  WRAP    arch/arm/include/generated/asm/termios.h
+  WRAP    arch/arm/include/generated/asm/timex.h
+echo /home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro.dtb >>dtboimg.cfg.tmp; echo " id=0" >>dtboimg.cfg.tmp; 
+  WRAP    arch/arm/include/generated/asm/trace_clock.h
+if ! cmp -s dtboimg.cfg.tmp dtboimg.cfg; then \
+	mv dtboimg.cfg.tmp dtboimg.cfg; \
+else \
+	rm dtboimg.cfg.tmp; \
+fi
+  UPD     include/config/kernel.release
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+  Using .. as source for kernel
+  HOSTCC  scripts/dtc/dtc.o
+  HOSTCC  scripts/dtc/flattree.o
+  HOSTCC  scripts/dtc/fstree.o
+*MTK_GPU_VERSION 1 = mali
+  HOSTCC  scripts/dtc/data.o
+mali MTK evironment
+mali MTK evironment
+mali MTK evironment
+  HOSTCC  scripts/dtc/livetree.o
+  HOSTCC  scripts/dtc/treesource.o
+  HOSTCC  scripts/dtc/srcpos.o
+  HOSTCC  scripts/dtc/checks.o
+  HOSTCC  scripts/dtc/util.o
+  SHIPPED scripts/dtc/dtc-lexer.lex.c
+  SHIPPED scripts/dtc/dtc-parser.tab.h
+  SHIPPED scripts/dtc/dtc-parser.tab.c
+  HOSTCC  scripts/dtc/dtc-lexer.lex.o
+  HOSTCC  scripts/dtc/dtc-parser.tab.o
+  HOSTCC  scripts/genksyms/genksyms.o
+  SHIPPED scripts/genksyms/parse.tab.c
+  SHIPPED scripts/genksyms/lex.lex.c
+  SHIPPED scripts/genksyms/keywords.hash.c
+  HOSTLD  scripts/dtc/dtc
+  SHIPPED scripts/genksyms/parse.tab.h
+  CC      scripts/mod/empty.o
+  HOSTCC  scripts/kallsyms
+  HOSTCC  scripts/selinux/genheaders/genheaders
+  HOSTCC  scripts/mod/mk_elfconfig
+  CC      scripts/mod/devicetable-offsets.s
+  MKELF   scripts/mod/elfconfig.h
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/selinux/mdp/mdp
+  HOSTCC  scripts/mod/sumversion.o
+  HOSTCC  scripts/genksyms/parse.tab.o
+  HOSTCC  scripts/sortextable
+  HOSTCC  scripts/asn1_compiler
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/genksyms/lex.lex.o
+  HOSTCC  scripts/mod/file2alias.o
+  Generating include/generated/mach-types.h
+  CC      kernel/bounds.s
+  GEN     include/generated/bounds.h
+  CC      arch/arm/kernel/asm-offsets.s
+  HOSTLD  scripts/genksyms/genksyms
+  GEN     include/generated/asm-offsets.h
+  CALL    ../scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  HOSTCC  usr/gen_init_cpio
+  CC      init/main.o
+  CC      arch/arm/vfp/vfpmodule.o
+  LDS     arch/arm/vdso/vdso.lds
+  CC      arch/arm/vdso/vgettimeofday.o
+  GEN     usr/initramfs_data.cpio.gz
+  AS      usr/initramfs_data.o
+  AS      arch/arm/vdso/datapage.o
+  LD      usr/built-in.o
+  AS      arch/arm/vfp/entry.o
+  HOSTCC  arch/arm/vdso/vdsomunge
+  AS      arch/arm/vfp/vfphw.o
+  CC      arch/arm/vfp/vfpsingle.o
+  VDSO    arch/arm/vdso/vdso.so.raw
+  MUNGE   arch/arm/vdso/vdso.so.dbg
+  CC      arch/arm/vfp/vfpdouble.o
+  LD      arch/arm/vfp/vfp.o
+  LD      arch/arm/vfp/built-in.o
+  CHK     include/generated/compile.h
+  CC      arch/arm/kernel/elf.o
+  CC      arch/arm/mm/dma-mapping.o
+  UPD     include/generated/compile.h
+  CC      init/do_mounts.o
+  AS      arch/arm/kernel/entry-common.o
+  CC      arch/arm/kernel/irq.o
+  CC      init/do_mounts_initrd.o
+  CC      arch/arm/mm/extable.o
+  CC      init/do_mounts_md.o
+  CC      arch/arm/mm/fault.o
+  CC      init/do_mounts_dm.o
+  CC      arch/arm/mm/init.o
+  CC      init/noinitramfs.o
+  CC      init/initramfs.o
+  CC      init/calibrate.o
+  CC      init/init_task.o
+  CC      arch/arm/mm/iomap.o
+  CC      arch/arm/mm/fault-armv.o
+  CC      arch/arm/mm/flush.o
+  CC      arch/arm/mm/idmap.o
+  CC      arch/arm/mm/ioremap.o
+  CC      arch/arm/mm/mmap.o
+  CC      arch/arm/mm/pgd.o
+  CC      arch/arm/mm/mmu.o
+  CC      arch/arm/mm/proc-syms.o
+  CC      arch/arm/mm/alignment.o
+  CC      arch/arm/mm/highmem.o
+  AS      arch/arm/mm/abort-ev7.o
+  AS      arch/arm/mm/pabort-v7.o
+  AS      arch/arm/mm/cache-v7.o
+  CC      arch/arm/mm/copypage-v6.o
+  CC      arch/arm/mm/context.o
+  AS      arch/arm/mm/tlb-v7.o
+  AS      arch/arm/mm/proc-v7.o
+  AS      arch/arm/mm/mt_cache_v7.o
+  CC      arch/arm/mm/mt_innercache.o
+  LD      arch/arm/mm/built-in.o
+  CC      arch/arm/common/firmware.o
+  LD      arch/arm/common/built-in.o
+  LD      arch/arm/net/built-in.o
+  CC      arch/arm/kernel/opcodes.o
+  CC      init/version.o
+  AS      arch/arm/crypto/aes-armv4.o
+  CC      arch/arm/crypto/aes_glue.o
+  OBJCOPY arch/arm/vdso/vdso.so
+  AS      arch/arm/vdso/vdso.o
+  CC      arch/arm/kernel/process.o
+  LD      init/mounts.o
+  AS      arch/arm/crypto/aes-ce-core.o
+  LD      init/built-in.o
+  LD      arch/arm/vdso/built-in.o
+  CC      arch/arm/kernel/ptrace.o
+  LD      arch/arm/firmware/built-in.o
+  CC      arch/arm/crypto/aes-ce-glue.o
+  CC      arch/arm/mach-mediatek/core.o
+  LD      arch/arm/mach-mediatek/built-in.o
+  CC      kernel/fork.o
+  SHIPPED arch/arm/crypto/sha256-core.S
+  CC      arch/arm/crypto/sha256_glue.o
+  CC      arch/arm/kernel/return_address.o
+  CC      arch/arm/kernel/setup.o
+  CC      arch/arm/crypto/sha256_neon_glue.o
+  CC      arch/arm/kernel/signal.o
+  CC      kernel/exec_domain.o
+  AS      arch/arm/crypto/sha2-ce-core.o
+  CC      mm/filemap.o
+  CC      arch/arm/crypto/sha2-ce-glue.o
+  AS      arch/arm/kernel/sigreturn_codes.o
+  CC      arch/arm/kernel/stacktrace.o
+  CC      kernel/panic.o
+  LD      arch/arm/crypto/aes-arm.o
+  LD      arch/arm/crypto/aes-arm-ce.o
+  AS      arch/arm/crypto/sha256-core.o
+  CC      arch/arm/kernel/sys_arm.o
+  LD      arch/arm/crypto/sha2-arm-ce.o
+  LD      arch/arm/crypto/sha256-arm.o
+  LD      arch/arm/crypto/built-in.o
+  CC      mm/mempool.o
+  CC      arch/arm/kernel/time.o
+  CC      kernel/cpu.o
+  CC      arch/arm/kernel/traps.o
+  CC      mm/oom_kill.o
+  CC      mm/maccess.o
+  CC      kernel/exit.o
+  CC      mm/page_alloc.o
+  CC      arch/arm/kernel/atags_parse.o
+  CC      mm/page-writeback.o
+  AS      arch/arm/kernel/entry-armv.o
+  CC      arch/arm/kernel/cpuidle.o
+  CC      arch/arm/kernel/armksyms.o
+  CC      arch/arm/kernel/module.o
+  AS      arch/arm/kernel/sleep.o
+  CC      arch/arm/kernel/suspend.o
+  CC      kernel/softirq.o
+  CC      mm/readahead.o
+  CC      arch/arm/kernel/smp.o
+  CC      mm/swap.o
+  CC      mm/truncate.o
+  CC      arch/arm/kernel/smp_tlb.o
+  CC      kernel/resource.o
+  CC      arch/arm/kernel/arch_timer.o
+  CC      arch/arm/kernel/devtree.o
+  CC      mm/vmscan.o
+  CC      arch/arm/kernel/swp_emulate.o
+  CC      mm/shmem.o
+  CC      kernel/sysctl.o
+  CC      arch/arm/kernel/hw_breakpoint.o
+  CC      arch/arm/kernel/perf_regs.o
+  CC      arch/arm/kernel/perf_event.o
+  CC      kernel/sysctl_binary.o
+  CC      arch/arm/kernel/perf_event_cpu.o
+  CC      mm/util.o
+  CC      kernel/capability.o
+  CC      mm/mmzone.o
+  CC      mm/vmstat.o
+  CC      mm/backing-dev.o
+  CC      arch/arm/kernel/topology.o
+  CC      kernel/ptrace.o
+  CC      arch/arm/kernel/vdso.o
+  CC      mm/mm_init.o
+  CC      mm/mmu_context.o
+  CC      arch/arm/kernel/io.o
+  CC      kernel/user.o
+  AS      arch/arm/kernel/hyp-stub.o
+  CC      arch/arm/kernel/psci.o
+  CC      mm/percpu.o
+  CC      mm/slab_common.o
+  AS      arch/arm/kernel/psci-call.o
+  CC      arch/arm/kernel/psci_smp.o
+  CC      kernel/signal.o
+  AS      arch/arm/kernel/head.o
+  LDS     arch/arm/kernel/vmlinux.lds
+  LD      arch/arm/kernel/built-in.o
+  CC      mm/compaction.o
+  CC      mm/vmacache.o
+  CC      mm/interval_tree.o
+  CC      mm/list_lru.o
+  CC      mm/workingset.o
+  CC      mm/iov_iter.o
+  LD      ipc/built-in.o
+  CC      fs/open.o
+  CC      security/integrity/iint.o
+  CC      security/integrity/integrity_audit.o
+  CC      kernel/sys.o
+  LD      security/integrity/integrity.o
+  LD      security/integrity/built-in.o
+  CC      security/keys/gc.o
+  CC      mm/debug.o
+  CC      security/keys/key.o
+  CC      fs/read_write.o
+  CC      mm/fremap.o
+  CC      security/keys/keyring.o
+  CC      kernel/kmod.o
+  CC      mm/gup.o
+  CC      security/keys/keyctl.o
+  CC      fs/file_table.o
+  CC      kernel/workqueue.o
+  CC      mm/highmem.o
+  CC      fs/super.o
+  CC      security/keys/permission.o
+  CC      security/keys/process_keys.o
+  CC      mm/memory.o
+  CC      security/keys/request_key.o
+  CC      fs/char_dev.o
+  CC      security/keys/request_key_auth.o
+  CC      fs/stat.o
+  CC      security/keys/user_defined.o
+  CC      kernel/pid.o
+  CC      security/keys/proc.o
+  CC      mm/mincore.o
+  CC      fs/exec.o
+  CC      security/keys/sysctl.o
+  CC      security/keys/encrypted-keys/encrypted.o
+  CC      mm/mlock.o
+  CC      kernel/task_work.o
+  CC      kernel/extable.o
+  CC      security/keys/encrypted-keys/ecryptfs_format.o
+  CC      kernel/params.o
+  CC      mm/mmap.o
+  CC      fs/pipe.o
+  LD      security/keys/encrypted-keys/encrypted-keys.o
+  LD      security/keys/encrypted-keys/built-in.o
+  LD      security/keys/built-in.o
+  GEN     security/selinux/flask.h security/selinux/av_permissions.h
+  CC      security/selinux/avc.o
+  CC      kernel/kthread.o
+  CC      fs/namei.o
+  CC      security/selinux/hooks.o
+  CC      kernel/sys_ni.o
+  CC      kernel/nsproxy.o
+  CC      mm/mprotect.o
+  CC      kernel/notifier.o
+  CC      mm/mremap.o
+  CC      kernel/ksysfs.o
+  CC      mm/msync.o
+  CC      kernel/cred.o
+  CC      mm/rmap.o
+  CC      fs/fcntl.o
+  CC      kernel/reboot.o
+  CC      security/selinux/selinuxfs.o
+  CC      mm/vmalloc.o
+  CC      kernel/async.o
+  CC      fs/ioctl.o
+  CC      kernel/range.o
+  CC      security/selinux/netlink.o
+  CC      kernel/groups.o
+  CC      security/selinux/nlmsgtab.o
+  CC      fs/readdir.o
+  CC      mm/pagewalk.o
+  CC      kernel/smpboot.o
+  CC      security/selinux/netif.o
+  CC      mm/pgtable-generic.o
+  CC      fs/select.o
+  CC      kernel/bpf/core.o
+  CC      mm/process_vm_access.o
+  CC      security/selinux/netnode.o
+  CC      mm/init-mm.o
+  CC      mm/nobootmem.o
+  CC      security/selinux/netport.o
+  LD      kernel/bpf/built-in.o
+  CC      kernel/events/core.o
+  CC      fs/dcache.o
+  CC      mm/fadvise.o
+  CC      security/selinux/exports.o
+  CC      security/selinux/ss/ebitmap.o
+  CC      mm/madvise.o
+  CC      mm/memblock.o
+  CC      security/selinux/ss/hashtab.o
+  CC      security/selinux/ss/symtab.o
+  CC      security/selinux/ss/sidtab.o
+  CC      mm/page_io.o
+  CC      fs/inode.o
+  CC      security/selinux/ss/avtab.o
+  CC      mm/swap_state.o
+  CC      mm/swapfile.o
+  CC      security/selinux/ss/policydb.o
+  CC      fs/attr.o
+  CC      kernel/events/ring_buffer.o
+  CC      fs/bad_inode.o
+  CC      kernel/events/callchain.o
+  CC      fs/file.o
+  CC      kernel/events/hw_breakpoint.o
+  CC      mm/dmapool.o
+  CC      security/selinux/ss/services.o
+  LD      kernel/events/built-in.o
+  CC      kernel/irq/irqdesc.o
+  CC      mm/slub.o
+  CC      fs/filesystems.o
+  CC      kernel/irq/handle.o
+  CC      fs/namespace.o
+  CC      kernel/irq/manage.o
+  CC      security/selinux/ss/conditional.o
+  CC      kernel/irq/spurious.o
+  CC      mm/migrate.o
+  CC      security/selinux/ss/mls.o
+  CC      kernel/irq/resend.o
+  CC      kernel/irq/chip.o
+  CC      fs/seq_file.o
+  CC      security/selinux/ss/status.o
+  CC      mm/memcontrol.o
+  CC      kernel/irq/dummychip.o
+  LD      security/selinux/selinux.o
+  LD      security/selinux/built-in.o
+  CC      security/commoncap.o
+  CC      fs/xattr.o
+  CC      kernel/irq/devres.o
+  CC      kernel/irq/autoprobe.o
+  CC      security/min_addr.o
+  CC      kernel/irq/irqdomain.o
+  CC      security/security.o
+  CC      fs/libfs.o
+  CC      kernel/irq/proc.o
+  CC      kernel/irq/pm.o
+  CC      security/capability.o
+  CC      fs/fs-writeback.o
+  CC      mm/page_cgroup.o
+  LD      kernel/irq/built-in.o
+  CC      kernel/locking/mutex.o
+  CC      security/lsm_audit.o
+  CC      mm/vmpressure.o
+  CC      kernel/locking/semaphore.o
+  CC      mm/zsmalloc.o
+  LD      security/built-in.o
+  CC      crypto/api.o
+  CC      kernel/locking/rwsem.o
+  CC      kernel/locking/mcs_spinlock.o
+  CC      fs/pnode.o
+  CC      mm/usercopy.o
+  CC      kernel/locking/spinlock.o
+  CC      crypto/cipher.o
+  CC      fs/splice.o
+  LD      mm/built-in.o
+  CC      kernel/locking/lglock.o
+  CC      block/bio.o
+  CC      crypto/compress.o
+  CC      kernel/locking/rtmutex.o
+  CC      crypto/memneq.o
+  CC      kernel/locking/rwsem-xadd.o
+  CC      fs/sync.o
+  CC      crypto/crypto_wq.o
+  LD      kernel/locking/built-in.o
+  CC      kernel/power/qos.o
+  CC      block/elevator.o
+  CC      fs/utimes.o
+  CC      crypto/algapi.o
+  CC      kernel/power/main.o
+  CC      fs/stack.o
+  CC      fs/fs_struct.o
+  CC      block/blk-core.o
+  CC      kernel/power/process.o
+  CC      fs/statfs.o
+  CC      crypto/scatterwalk.o
+  CC      kernel/power/suspend.o
+  CC      fs/fs_pin.o
+  CC      crypto/proc.o
+  CC      fs/buffer.o
+  CC      crypto/aead.o
+  CC      kernel/power/autosleep.o
+  CC      kernel/power/wakelock.o
+  CC      kernel/power/poweroff.o
+  CC      crypto/ablkcipher.o
+  CC      block/blk-tag.o
+  CC      kernel/power/wakeup_reason.o
+  LD      kernel/power/built-in.o
+  CC      kernel/printk/printk.o
+  CC      block/blk-sysfs.o
+  CC      fs/block_dev.o
+  CC      crypto/blkcipher.o
+  CC      block/blk-flush.o
+  CC      crypto/chainiv.o
+  CC      block/blk-settings.o
+  CC      fs/direct-io.o
+  LD      kernel/printk/built-in.o
+  CC      kernel/rcu/update.o
+  CC      crypto/eseqiv.o
+  CC      kernel/rcu/srcu.o
+  CC      block/blk-ioc.o
+  CC      crypto/seqiv.o
+  CC      kernel/rcu/tree.o
+  CC      crypto/ahash.o
+  CC      fs/mpage.o
+  CC      block/blk-map.o
+  CC      block/blk-exec.o
+  CC      crypto/shash.o
+  CC      fs/proc_namespace.o
+  CC      block/blk-merge.o
+  CC      fs/configfs/inode.o
+  LD      kernel/rcu/built-in.o
+  CC      kernel/sched/core.o
+  CC      crypto/pcompress.o
+  CC      fs/configfs/file.o
+  CC      fs/configfs/dir.o
+  CC      crypto/algboss.o
+  CC      block/blk-softirq.o
+  CC      fs/configfs/symlink.o
+  CC      crypto/testmgr.o
+  CC      block/blk-timeout.o
+  CC      fs/configfs/mount.o
+  CC      fs/configfs/item.o
+  CC      crypto/hmac.o
+  CC      block/blk-iopoll.o
+  LD      fs/configfs/configfs.o
+  LD      fs/configfs/built-in.o
+  CC      fs/crypto/crypto.o
+  CC      crypto/xcbc.o
+  CC      block/blk-lib.o
+  CC      crypto/crypto_null.o
+  CC      fs/crypto/fname.o
+  CC      crypto/md5.o
+  CC      block/blk-mq.o
+  CC      fs/crypto/hooks.o
+  CC      crypto/sha1_generic.o
+  CC      fs/crypto/keyinfo.o
+  CC      crypto/sha256_generic.o
+  CC      kernel/sched/proc.o
+  CC      fs/crypto/policy.o
+  CC      block/blk-mq-tag.o
+  CC      crypto/sha512_generic.o
+  CC      kernel/sched/clock.o
+  CC      fs/crypto/bio.o
+  CC      kernel/sched/cputime.o
+  CC      block/blk-mq-sysfs.o
+  LD      fs/crypto/fscrypto.o
+  LD      fs/crypto/built-in.o
+  CC      crypto/gf128mul.o
+  CC      fs/debugfs/inode.o
+  CC      kernel/sched/idle_task.o
+  CC      kernel/sched/fair.o
+  CC      block/blk-mq-cpu.o
+  CC      crypto/ecb.o
+  CC      fs/debugfs/file.o
+  CC      block/blk-mq-cpumap.o
+  CC      crypto/cbc.o
+  CC      block/ioctl.o
+  CC      crypto/cts.o
+  LD      fs/debugfs/debugfs.o
+  LD      fs/debugfs/built-in.o
+  CC      fs/devpts/inode.o
+  CC      crypto/xts.o
+  LD      fs/devpts/devpts.o
+  LD      fs/devpts/built-in.o
+  LD      fs/exofs/built-in.o
+  CC      block/genhd.o
+  CC      fs/ext4/balloc.o
+  CC      crypto/ctr.o
+  CC      fs/ext4/bitmap.o
+  CC      crypto/gcm.o
+  CC      kernel/sched/rt.o
+  CC      block/scsi_ioctl.o
+  CC      fs/ext4/dir.o
+  CC      fs/ext4/file.o
+  CC      crypto/cryptd.o
+  CC      block/partition-generic.o
+  CC      kernel/sched/deadline.o
+  CC      fs/ext4/fsync.o
+  CC      kernel/sched/stop_task.o
+  CC      crypto/des_generic.o
+  CC      block/ioprio.o
+  CC      fs/ext4/ialloc.o
+  CC      kernel/sched/wait.o
+  CC      crypto/twofish_generic.o
+  CC      block/partitions/check.o
+  CC      kernel/sched/completion.o
+  CC      crypto/twofish_common.o
+  CC      block/partitions/msdos.o
+  CC      kernel/sched/idle.o
+  CC      fs/ext4/inode.o
+  CC      crypto/aes_generic.o
+  CC      block/partitions/efi.o
+  CC      kernel/sched/cpupri.o
+  CC      kernel/sched/cpudeadline.o
+  CC      kernel/sched/stats.o
+  LD      block/partitions/built-in.o
+  CC      block/noop-iosched.o
+  CC      crypto/arc4.o
+  CC      kernel/sched/debug.o
+  CC      block/deadline-iosched.o
+  CC      crypto/deflate.o
+  CC      crypto/crc32c_generic.o
+  CC      block/cfq-iosched.o
+  CC      crypto/crc32.o
+  CC      kernel/sched/cpuacct.o
+  CC      crypto/authenc.o
+  LD      kernel/sched/built-in.o
+  HZFILE  kernel/time/hz.bc
+  CC      kernel/time/timer.o
+  CC      fs/ext4/page-io.o
+  LD      block/built-in.o
+  CC      kernel/time/hrtimer.o
+  CC      fs/ext4/ioctl.o
+  CC      crypto/authencesn.o
+  CC      fs/ext4/namei.o
+  CC      kernel/time/itimer.o
+  CC      crypto/lzo.o
+  CC      kernel/time/posix-timers.o
+make[1]: Entering directory '/home/ruben1863/disk/android_pie_kernel_X5_Pro/out'
+  GEN     ./Makefile
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  WRAP    arch/arm/include/generated/asm/bitsperlong.h
+  WRAP    arch/arm/include/generated/asm/cputime.h
+  WRAP    arch/arm/include/generated/asm/current.h
+  WRAP    arch/arm/include/generated/asm/emergency-restart.h
+  WRAP    arch/arm/include/generated/asm/errno.h
+  WRAP    arch/arm/include/generated/asm/exec.h
+  WRAP    arch/arm/include/generated/asm/hash.h
+  WRAP    arch/arm/include/generated/asm/ioctl.h
+  WRAP    arch/arm/include/generated/asm/ipcbuf.h
+  WRAP    arch/arm/include/generated/asm/irq_regs.h
+  WRAP    arch/arm/include/generated/asm/kdebug.h
+  WRAP    arch/arm/include/generated/asm/local.h
+  CHK     include/generated/uapi/linux/version.h
+  UPD     include/config/kernel.release
+  WRAP    arch/arm/include/generated/asm/local64.h
+  UPD     include/generated/uapi/linux/version.h
+  WRAP    arch/arm/include/generated/asm/mcs_spinlock.h
+  WRAP    arch/arm/include/generated/asm/msgbuf.h
+  WRAP    arch/arm/include/generated/asm/param.h
+  WRAP    arch/arm/include/generated/asm/parport.h
+  WRAP    arch/arm/include/generated/asm/poll.h
+  WRAP    arch/arm/include/generated/asm/preempt.h
+for i in ../arch/arm/boot/dts/x5_pro.dts; do \
+	base_prj=`grep -m 1 '#include [<\"].*\/cust\.dtsi[>\"]' $i | sed 's/#include [<"]//g'\
+       	| sed 's/\/cust\.dtsi[>"]//g' | sed 's/\/\*//g' | sed 's/\*\///g' | sed 's/ //g'`\
+	prj_path=./arch/arm/boot/dts/$base_prj ;\
+	dws_path=../drivers/misc/mediatek/dws/mt6735/$base_prj.dws ;\
+	if [ -f $dws_path ] ; then \
+		mkdir -p $prj_path ;\
+		 ../tools/dct/DrvGen.py $dws_path $prj_path $prj_path cust_dtsi;\
+	fi \
+done
+  WRAP    arch/arm/include/generated/asm/resource.h
+  WRAP    arch/arm/include/generated/asm/rwsem.h
+  WRAP    arch/arm/include/generated/asm/scatterlist.h
+  WRAP    arch/arm/include/generated/asm/sections.h
+  WRAP    arch/arm/include/generated/asm/segment.h
+  WRAP    arch/arm/include/generated/asm/sembuf.h
+  WRAP    arch/arm/include/generated/asm/serial.h
+  WRAP    arch/arm/include/generated/asm/shmbuf.h
+  WRAP    arch/arm/include/generated/asm/siginfo.h
+  WRAP    arch/arm/include/generated/asm/simd.h
+  HOSTCC  scripts/basic/bin2c
+  WRAP    arch/arm/include/generated/asm/sizes.h
+  WRAP    arch/arm/include/generated/asm/socket.h
+for i in ../arch/arm/boot/dts/x5_pro.dts; do \
+	base_prj=`grep -m 1 '#include [<\"].*\/cust\.dtsi[>\"]' $i | sed 's/#include [<"]//g'\
+       	| sed 's/\/cust\.dtsi[>"]//g' | sed 's/\/\*//g' | sed 's/\*\///g' | sed 's/ //g'`\
+	prj_path=./arch/arm/boot/dts/$base_prj ;\
+	dws_path=../drivers/misc/mediatek/dws/mt6735/$base_prj.dws ;\
+	if [ -f $dws_path ] ; then \
+		mkdir -p $prj_path ;\
+		 ../tools/dct/DrvGen.py $dws_path $prj_path $prj_path cust_dtsi;\
+	fi \
+done
+  WRAP    arch/arm/include/generated/asm/sockios.h
+  WRAP    arch/arm/include/generated/asm/termbits.h
+  WRAP    arch/arm/include/generated/asm/termios.h
+  WRAP    arch/arm/include/generated/asm/timex.h
+  WRAP    arch/arm/include/generated/asm/trace_clock.h
+rm -f dtboimg.cfg.tmp
+echo /home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro.dtb >>dtboimg.cfg.tmp; echo " id=0" >>dtboimg.cfg.tmp; 
+if ! cmp -s dtboimg.cfg.tmp dtboimg.cfg; then \
+	mv dtboimg.cfg.tmp dtboimg.cfg; \
+else \
+	rm dtboimg.cfg.tmp; \
+fi
+Enter main function!
+Enter main function!
+The 0th param is: 
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/tools/dct/old_dct/DrvGen
+The 0th param is: 
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/tools/dct/old_dct/DrvGen
+The 1th param is: 
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/drivers/misc/mediatek/dws/mt6735/x5_pro.dws
+The 2th param is: 
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro
+The 3th param is: 
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro
+The 4th param is: 
+cust_dtsi
+The 1th param is: 
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/drivers/misc/mediatek/dws/mt6735/x5_pro.dws
+The 2th param is: 
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro
+The 3th param is: 
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro
+The 4th param is: 
+cust_dtsi
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/drivers/misc/mediatek/dws/mt6735/x5_pro.dws
+start to parse fig file!
+/home/ruben1863/disk/android_pie_kernel_X5_Pro/drivers/misc/mediatek/dws/mt6735/x5_pro.dws
+start to parse fig file!
+start to parse fig file!
+start to parse fig file!
+Start to gen cust_i2c.dtsi...
+Gen cust_i2c.dtsi file successfully!.
+Start to gen cust_eint.dtsi...
+Start to gen cust_i2c.dtsi...
+Gen cust_i2c.dtsi file successfully!.
+Start to gen cust_eint.dtsi...
+Gen cust_eint.dtsi successfully!
+Start to gen cust_gpio_usage_mapping.dtsi...
+Gen cust_eint.dtsi successfully!
+Start to gen cust_gpio_usage_mapping.dtsi...
+Gen cust_gpio_usage_mapping.dtsi file successfully!.
+Start to gen cust_md1_eint.dtsi...
+Gen cust_md1_eint.dtsi file successfully!.
+Gen cust_pmic.dtsi file successfully!.
+Start to gen cust_adc.dtsi...
+Gen cust_adc.dtsi file successfully!.
+Start to gen cust_clk_buf.dtsi...
+Gen cust_clk_buf.dtsi file successfully!
+Start to gen cust_kpd.dtsi...
+Gen cust_kpd.dtsi file successfully!.
+Gen cust_gpio_usage_mapping.dtsi file successfully!.
+Start to gen cust_md1_eint.dtsi...
+Gen cust_md1_eint.dtsi file successfully!.
+Gen cust_pmic.dtsi file successfully!.
+Start to gen cust_adc.dtsi...
+Gen cust_adc.dtsi file successfully!.
+Start to gen cust_clk_buf.dtsi...
+Gen cust_clk_buf.dtsi file successfully!
+Start to gen cust_kpd.dtsi...
+Gen cust_kpd.dtsi file successfully!.
+[DCT_INFO]: DWS file path is /home/ruben1863/disk/android_pie_kernel_X5_Pro/drivers/misc/mediatek/dws/mt6735/x5_pro.dws
+[DCT_INFO]: Gen files path is /home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro
+[DCT_INFO]: Log files path is /home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro
+[DCT_INFO]: Parameter is cust_dtsi
+[DCT_WARNING]: /home/ruben1863/disk/android_pie_kernel_X5_Pro/drivers/misc/mediatek/dws/mt6735/x5_pro.dws is not xml format, try to use old DCT!
+[DCT_INFO]: DWS file path is /home/ruben1863/disk/android_pie_kernel_X5_Pro/drivers/misc/mediatek/dws/mt6735/x5_pro.dws
+[DCT_INFO]: Gen files path is /home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro
+[DCT_INFO]: Log files path is /home/ruben1863/disk/android_pie_kernel_X5_Pro/out/arch/arm/boot/dts/x5_pro
+[DCT_INFO]: Parameter is cust_dtsi
+[DCT_WARNING]: /home/ruben1863/disk/android_pie_kernel_X5_Pro/drivers/misc/mediatek/dws/mt6735/x5_pro.dws is not xml format, try to use old DCT!
+  Using .. as source for kernel
+*MTK_GPU_VERSION 1 = mali
+mali MTK evironment
+mali MTK evironment
+mali MTK evironment
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+  HOSTCC  scripts/dtc/dtc.o
+  HOSTCC  scripts/genksyms/genksyms.o
+  SHIPPED scripts/genksyms/parse.tab.c
+  CC      scripts/mod/empty.o
+  HOSTCC  scripts/mod/mk_elfconfig
+  HOSTCC  scripts/dtc/flattree.o
+  CC      scripts/mod/devicetable-offsets.s
+  MKELF   scripts/mod/elfconfig.h
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/sumversion.o
+  SHIPPED scripts/genksyms/lex.lex.c
+  SHIPPED scripts/genksyms/keywords.hash.c
+  SHIPPED scripts/genksyms/parse.tab.h
+  HOSTCC  scripts/genksyms/parse.tab.o
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/dtc/fstree.o
+  HOSTCC  scripts/genksyms/lex.lex.o
+  Generating include/generated/mach-types.h
+  HOSTCC  scripts/dtc/data.o
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTCC  scripts/dtc/livetree.o
+  HOSTLD  scripts/genksyms/genksyms
+  HOSTCC  scripts/dtc/treesource.o
+  HOSTCC  scripts/selinux/genheaders/genheaders
+  HOSTCC  scripts/dtc/srcpos.o
+  HOSTLD  scripts/mod/modpost
+  HOSTCC  scripts/selinux/mdp/mdp
+  HOSTCC  scripts/kallsyms
+  HOSTCC  scripts/dtc/checks.o
+  HOSTCC  scripts/dtc/util.o
+  HOSTCC  scripts/sortextable
+  SHIPPED scripts/dtc/dtc-lexer.lex.c
+  SHIPPED scripts/dtc/dtc-parser.tab.h
+  SHIPPED scripts/dtc/dtc-parser.tab.c
+  HOSTCC  scripts/dtc/dtc-lexer.lex.o
+  HOSTCC  scripts/dtc/dtc-parser.tab.o
+  HOSTCC  scripts/asn1_compiler
+  CC      kernel/bounds.s
+  GEN     include/generated/bounds.h
+  CC      arch/arm/kernel/asm-offsets.s
+  HOSTLD  scripts/dtc/dtc
+  GEN     include/generated/asm-offsets.h
+  DTC     arch/arm/boot/dts/x5_pro.dtb
+  CALL    ../scripts/checksyscalls.sh
+for i in ./arch/arm/boot/dts/x5_pro.dtb; do \
+	../scripts/dtc/ufdt_apply_overlay ./arch/arm/boot/dts/x5_pro.dtb $i $i.merge;\
+done
+ufdt_apply_overlay: took 0.000000000 secs
+  HOSTCC  usr/gen_init_cpio
+  CC      init/main.o
+  CC      arch/arm/vfp/vfpmodule.o
+  LDS     arch/arm/vdso/vdso.lds
+  CC      arch/arm/vdso/vgettimeofday.o
+  GEN     usr/initramfs_data.cpio.gz
+  AS      usr/initramfs_data.o
+  LD      usr/built-in.o
+  AS      arch/arm/vdso/datapage.o
+  HOSTCC  arch/arm/vdso/vdsomunge
+  CC      arch/arm/kernel/elf.o
+  VDSO    arch/arm/vdso/vdso.so.raw
+  MUNGE   arch/arm/vdso/vdso.so.dbg
+  AS      arch/arm/vfp/entry.o
+  AS      arch/arm/vfp/vfphw.o
+  CC      arch/arm/vfp/vfpsingle.o
+  AS      arch/arm/kernel/entry-common.o
+  OBJCOPY arch/arm/vdso/vdso.so
+  AS      arch/arm/vdso/vdso.o
+  LD      arch/arm/vdso/built-in.o
+  CC      arch/arm/kernel/irq.o
+  CC      arch/arm/mm/dma-mapping.o
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/do_mounts.o
+  CC      arch/arm/vfp/vfpdouble.o
+  CC      arch/arm/kernel/opcodes.o
+  CC      arch/arm/kernel/process.o
+  LD      arch/arm/vfp/vfp.o
+  LD      arch/arm/vfp/built-in.o
+  CC      arch/arm/mm/extable.o
+  CC      arch/arm/mm/fault.o
+  CC      arch/arm/mm/init.o
+  CC      init/do_mounts_initrd.o
+  CC      arch/arm/mm/iomap.o
+  CC      init/do_mounts_md.o
+  CC      arch/arm/kernel/ptrace.o
+  CC      arch/arm/mm/fault-armv.o
+  CC      arch/arm/mm/flush.o
+  CC      init/do_mounts_dm.o
+  CC      arch/arm/mm/idmap.o
+  CC      arch/arm/kernel/return_address.o
+  CC      arch/arm/mm/ioremap.o
+  CC      init/noinitramfs.o
+  CC      arch/arm/mm/mmap.o
+  CC      arch/arm/kernel/setup.o
+  CC      init/initramfs.o
+  CC      arch/arm/mm/pgd.o
+  CC      arch/arm/mm/mmu.o
+  CC      arch/arm/mm/proc-syms.o
+  CC      init/calibrate.o
+  CC      init/init_task.o
+  CC      arch/arm/kernel/signal.o
+  CC      arch/arm/mm/alignment.o
+  CC      arch/arm/mm/highmem.o
+  AS      arch/arm/kernel/sigreturn_codes.o
+  CC      arch/arm/kernel/stacktrace.o
+  AS      arch/arm/mm/abort-ev7.o
+  CC      init/version.o
+  AS      arch/arm/mm/pabort-v7.o
+  AS      arch/arm/mm/cache-v7.o
+  CC      arch/arm/mm/copypage-v6.o
+  CC      arch/arm/kernel/sys_arm.o
+  LD      init/mounts.o
+  LD      init/built-in.o
+  CC      arch/arm/common/firmware.o
+  LD      arch/arm/net/built-in.o
+  CC      arch/arm/mm/context.o
+  AS      arch/arm/mm/tlb-v7.o
+  AS      arch/arm/mm/proc-v7.o
+  AS      arch/arm/mm/mt_cache_v7.o
+  CC      arch/arm/mm/mt_innercache.o
+  CC      arch/arm/kernel/time.o
+  LD      arch/arm/common/built-in.o
+  AS      arch/arm/crypto/aes-armv4.o
+  CC      arch/arm/crypto/aes_glue.o
+  LD      arch/arm/firmware/built-in.o
+  CC      arch/arm/mach-mediatek/core.o
+  AS      arch/arm/crypto/aes-ce-core.o
+  CC      arch/arm/kernel/traps.o
+  CC      arch/arm/crypto/aes-ce-glue.o
+  LD      arch/arm/mm/built-in.o
+  LD      arch/arm/mach-mediatek/built-in.o
+  CC      mm/filemap.o
+  CC      kernel/fork.o
+  SHIPPED arch/arm/crypto/sha256-core.S
+  CC      arch/arm/crypto/sha256_glue.o
+  CC      arch/arm/kernel/atags_parse.o
+  CC      arch/arm/crypto/sha256_neon_glue.o
+  AS      arch/arm/kernel/entry-armv.o
+  CC      arch/arm/kernel/cpuidle.o
+  CC      arch/arm/kernel/armksyms.o
+  AS      arch/arm/crypto/sha2-ce-core.o
+  CC      arch/arm/crypto/sha2-ce-glue.o
+  CC      kernel/exec_domain.o
+  CC      mm/mempool.o
+  LD      arch/arm/crypto/aes-arm.o
+  LD      arch/arm/crypto/aes-arm-ce.o
+  AS      arch/arm/crypto/sha256-core.o
+  CC      arch/arm/kernel/module.o
+  LD      arch/arm/crypto/sha2-arm-ce.o
+  LD      arch/arm/crypto/sha256-arm.o
+  LD      arch/arm/crypto/built-in.o
+  CC      fs/open.o
+  CC      kernel/panic.o
+  AS      arch/arm/kernel/sleep.o
+  CC      arch/arm/kernel/suspend.o
+  CC      mm/oom_kill.o
+  CC      arch/arm/kernel/smp.o
+  CC      kernel/cpu.o
+  CC      fs/read_write.o
+  CC      mm/maccess.o
+  CC      arch/arm/kernel/smp_tlb.o
+  CC      arch/arm/kernel/arch_timer.o
+  CC      mm/page_alloc.o
+  CC      arch/arm/kernel/devtree.o
+  CC      kernel/exit.o
+  CC      arch/arm/kernel/swp_emulate.o
+  CC      fs/file_table.o
+  CC      arch/arm/kernel/hw_breakpoint.o
+  CC      fs/super.o
+  CC      arch/arm/kernel/perf_regs.o
+  CC      arch/arm/kernel/perf_event.o
+  CC      kernel/softirq.o
+  CC      mm/page-writeback.o
+  CC      arch/arm/kernel/perf_event_cpu.o
+  CC      fs/char_dev.o
+  CC      fs/stat.o
+  CC      kernel/resource.o
+  CC      arch/arm/kernel/topology.o
+  CC      fs/exec.o
+  CC      arch/arm/kernel/vdso.o
+  CC      mm/readahead.o
+  CC      kernel/sysctl.o
+  CC      arch/arm/kernel/io.o
+  AS      arch/arm/kernel/hyp-stub.o
+  CC      arch/arm/kernel/psci.o
+  AS      arch/arm/kernel/psci-call.o
+  CC      arch/arm/kernel/psci_smp.o
+  CC      mm/swap.o
+  AS      arch/arm/kernel/head.o
+  LDS     arch/arm/kernel/vmlinux.lds
+  LD      arch/arm/kernel/built-in.o
+  LD      ipc/built-in.o
+  CC      security/integrity/iint.o
+  CC      fs/pipe.o
+  CC      security/integrity/integrity_audit.o
+  CC      kernel/sysctl_binary.o
+  LD      security/integrity/integrity.o
+  LD      security/integrity/built-in.o
+  CC      security/keys/gc.o
+  CC      security/keys/key.o
+  CC      mm/truncate.o
+  CC      kernel/capability.o
+  CC      fs/namei.o
+  CC      security/keys/keyring.o
+  CC      mm/vmscan.o
+  CC      kernel/ptrace.o
+  CC      security/keys/keyctl.o
+  CC      kernel/user.o
+  CC      security/keys/permission.o
+  CC      kernel/signal.o
+  CC      security/keys/process_keys.o
+  CC      fs/fcntl.o
+  CC      security/keys/request_key.o
+  CC      mm/shmem.o
+  CC      security/keys/request_key_auth.o
+  CC      fs/ioctl.o
+  CC      security/keys/user_defined.o
+  CC      security/keys/proc.o
+  CC      kernel/sys.o
+  CC      fs/readdir.o
+  CC      security/keys/sysctl.o
+  CC      security/keys/encrypted-keys/encrypted.o
+  CC      fs/select.o
+  CC      mm/util.o
+  CC      security/keys/encrypted-keys/ecryptfs_format.o
+  LD      security/keys/encrypted-keys/encrypted-keys.o
+  LD      security/keys/encrypted-keys/built-in.o
+  LD      security/keys/built-in.o
+  CC      mm/mmzone.o
+  GEN     security/selinux/flask.h security/selinux/av_permissions.h
+  CC      kernel/kmod.o
+  CC      security/selinux/avc.o
+  CC      mm/vmstat.o
+  CC      fs/dcache.o
+  CC      kernel/workqueue.o
+  CC      security/selinux/hooks.o
+  CC      mm/backing-dev.o
+  CC      mm/mm_init.o
+  CC      fs/inode.o
+  CC      mm/mmu_context.o
+  CC      kernel/pid.o
+  CC      mm/percpu.o
+  CC      security/selinux/selinuxfs.o
+  CC      fs/attr.o
+  CC      kernel/task_work.o
+  CC      kernel/extable.o
+  CC      mm/slab_common.o
+  CC      fs/bad_inode.o
+  CC      kernel/params.o
+  CC      security/selinux/netlink.o
+  CC      fs/file.o
+  CC      security/selinux/nlmsgtab.o
+  CC      kernel/kthread.o
+  CC      security/selinux/netif.o
+  CC      mm/compaction.o
+  CC      fs/filesystems.o
+  CC      kernel/sys_ni.o
+  CC      kernel/nsproxy.o
+  CC      security/selinux/netnode.o
+  CC      fs/namespace.o
+  CC      mm/vmacache.o
+  CC      kernel/notifier.o
+  CC      security/selinux/netport.o
+  CC      mm/interval_tree.o
+  CC      kernel/ksysfs.o
+  CC      mm/list_lru.o
+  CC      security/selinux/exports.o
+  CC      kernel/cred.o
+  CC      security/selinux/ss/ebitmap.o
+  CC      mm/workingset.o
+  CC      mm/iov_iter.o
+  CC      kernel/reboot.o
+  CC      fs/seq_file.o
+  CC      security/selinux/ss/hashtab.o
+  CC      security/selinux/ss/symtab.o
+  CC      security/selinux/ss/sidtab.o
+  CC      mm/debug.o
+  CC      kernel/async.o
+  CC      fs/xattr.o
+  CC      security/selinux/ss/avtab.o
+  CC      kernel/range.o
+  CC      kernel/groups.o
+  CC      mm/fremap.o
+  CC      security/selinux/ss/policydb.o
+  CC      fs/libfs.o
+  CC      kernel/smpboot.o
+  CC      mm/gup.o
+  CC      kernel/bpf/core.o
+  CC      mm/highmem.o
+  CC      fs/fs-writeback.o
+  CC      mm/memory.o
+  LD      kernel/bpf/built-in.o
+  CC      kernel/events/core.o
+  CC      security/selinux/ss/services.o
+  CC      fs/pnode.o
+  CC      security/selinux/ss/conditional.o
+  CC      mm/mincore.o
+  CC      fs/splice.o
+  CC      mm/mlock.o
+  CC      security/selinux/ss/mls.o
+  CC      mm/mmap.o
+  CC      fs/sync.o
+  CC      security/selinux/ss/status.o
+  CC      kernel/events/ring_buffer.o
+  LD      security/selinux/selinux.o
+  LD      security/selinux/built-in.o
+  CC      security/commoncap.o
+  CC      kernel/events/callchain.o
+  CC      fs/utimes.o
+  CC      kernel/events/hw_breakpoint.o
+  CC      security/min_addr.o
+  CC      security/security.o
+  CC      fs/stack.o
+  CC      mm/mprotect.o
+  CC      fs/fs_struct.o
+  LD      kernel/events/built-in.o
+  CC      kernel/irq/irqdesc.o
+  CC      mm/mremap.o
+  CC      fs/statfs.o
+  CC      kernel/irq/handle.o
+  CC      security/capability.o
+  CC      mm/msync.o
+  CC      kernel/irq/manage.o
+  CC      fs/fs_pin.o
+  CC      mm/rmap.o
+  CC      security/lsm_audit.o
+  CC      fs/buffer.o
+  CC      kernel/irq/spurious.o
+  LD      security/built-in.o
+  CC      mm/vmalloc.o
+  CC      crypto/api.o
+  CC      kernel/irq/resend.o
+  CC      kernel/irq/chip.o
+  CC      crypto/cipher.o
+  CC      kernel/irq/dummychip.o
+  CC      kernel/irq/devres.o
+  CC      crypto/compress.o
+  CC      fs/block_dev.o
+  CC      mm/pagewalk.o
+  CC      kernel/irq/autoprobe.o
+  CC      crypto/memneq.o
+  CC      mm/pgtable-generic.o
+  CC      kernel/irq/irqdomain.o
+  CC      mm/process_vm_access.o
+  CC      crypto/crypto_wq.o
+  CC      fs/direct-io.o
+  CC      kernel/irq/proc.o
+  CC      mm/init-mm.o
+  CC      crypto/algapi.o
+  CC      mm/nobootmem.o
+  CC      kernel/irq/pm.o
+  CC      mm/fadvise.o
+  LD      kernel/irq/built-in.o
+  CC      kernel/locking/mutex.o
+  CC      mm/madvise.o
+  CC      fs/mpage.o
+  CC      crypto/scatterwalk.o
+  CC      mm/memblock.o
+  CC      kernel/locking/semaphore.o
+  CC      kernel/locking/rwsem.o
+  CC      crypto/proc.o
+  CC      mm/page_io.o
+  CC      kernel/locking/mcs_spinlock.o
+  CC      crypto/aead.o
+  CC      fs/proc_namespace.o
+  CC      kernel/locking/spinlock.o
+  CC      mm/swap_state.o
+  CC      fs/configfs/inode.o
+  CC      kernel/locking/lglock.o
+  CC      mm/swapfile.o
+  CC      fs/configfs/file.o
+  CC      kernel/locking/rtmutex.o
+  CC      crypto/ablkcipher.o
+  CC      fs/configfs/dir.o
